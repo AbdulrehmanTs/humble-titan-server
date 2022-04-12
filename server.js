@@ -378,8 +378,9 @@ const getData = async () => {
     ...ComptrollerofPublicAccounts,
   ];
 };
-var dayInMilliseconds = 1000 * 60 * 60 * 24;
-setInterval(getData(), dayInMilliseconds);
+getData();
+// var dayInMilliseconds = 1000 * 60 * 60 * 24;
+// setInterval(getData(), dayInMilliseconds);
 
 app.get("/", (req, res) => {
   res.json(sorted);
